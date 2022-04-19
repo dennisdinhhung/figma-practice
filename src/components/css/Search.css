@@ -1,0 +1,307 @@
+/*! Search section*/
+
+.section-search {
+
+  position: absolute;
+  width: 900px;
+  height: 440px;
+  left: 327px;
+  top: 50px;
+
+  background: #FCFDFE;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  padding: 33px 43px;
+}
+
+.search-title {
+  width: 96px;
+  height: 26px;
+
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+
+  color: var(--main-blue);
+}
+
+.div-search {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.column1 {
+  flex-basis: 50%;
+}
+
+.column2 {
+  flex-basis: 50%;
+  margin-left: 40px;
+}
+
+.div-name {
+  width: 360px;
+  height: 68px;
+
+}
+
+.title-name {
+
+  width: 64px;
+  height: 18px;
+
+
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+
+
+  color: #03182C;
+}
+
+.input-name {
+
+  width: 360px;
+  height: 40px;
+
+  padding-left: 10px;
+
+  border: 1px solid var(--main-blue);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.div-phoneno {
+  width: 360px;
+  height: 68px;
+
+}
+
+.title-phoneno {
+
+  width: 80px;
+  height: 18px;
+
+
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+
+
+  color: #03182C;
+}
+
+.input-phone {
+  width: 360px;
+  height: 40px;
+
+  padding-left: 10px;
+
+  border: 1px solid var(--main-blue);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.div-address {
+  width: 360px;
+  height: 68px;
+}
+
+.title-address {
+  width: 80px;
+  height: 18px;
+
+
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+
+
+  color: #03182C;
+}
+
+.input-address {
+  width: 360px;
+  height: 40px;
+
+  padding-left: 10px;
+
+  border: 1px solid var(--main-blue);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.div-email {
+  width: 360px;
+  height: 68px;
+}
+
+.title-email {
+  width: 80px;
+  height: 18px;
+
+
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+
+
+  color: #03182C;
+}
+
+.input-email {
+  width: 360px;
+  height: 40px;
+
+  padding-left: 10px;
+
+  border: 1px solid var(--main-blue);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.div-pref {
+  width: 360px;
+  height: 68px;
+}
+
+.title-pref {
+  width: 80px;
+  height: 18px;
+
+
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+
+
+  color: #03182C;
+}
+
+.input-pref {
+  width: 360px;
+  height: 40px;
+
+  padding-left: 10px;
+
+  border: 1px solid var(--main-blue);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.div-dob {
+  width: 360px;
+  height: 68px;
+}
+
+.title-dob {
+  width: 80px;
+  height: 18px;
+
+
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+
+
+  color: #03182C;
+}
+
+.input-dob {
+  width: 360px;
+  height: 40px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  border: 1px solid var(--main-blue);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.buttons {
+  height: 40px;
+}
+
+.btn-search {
+  display: flex;
+}
+
+.btn-reset {
+  display: flex;
+}
+
+.btn-search button {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+
+  border-style: none;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+
+  color: var(--main-white);
+  background: var(--main-blue);
+  border-radius: 5px;
+}
+
+.btn-reset button {
+  width: 120px;
+  height: 40px;
+
+  border: 1px solid var(--main-blue);
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+
+  color: var(--main-blue);
+  background: var(--main-white);
+  border-radius: 5px;
+}
+
+.btn-reset button:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+.btn-reset button:active {
+  background: var(--main-white);
+}
+
+.btn-search button:hover {
+  opacity: 90%;
+}
+
+.btn-search button:active {
+  opacity: 100%;
+}

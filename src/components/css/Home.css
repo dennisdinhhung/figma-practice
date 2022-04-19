@@ -1,0 +1,155 @@
+/* HOME PAGE */
+
+.home-page {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+    background: #FCFDFE;
+}
+
+.left-menu {
+    position: fixed;
+    width: 277px;
+    height: 100%;
+
+    z-index: 1;
+
+    background: #FCFDFE;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.proflie-pic {
+    display: flex;
+    justify-content: center;
+
+    width: 70px;
+    height: 70px;
+
+    padding-top: 50px;
+}
+
+.profile-name {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 134px;
+}
+
+.item1-btn {
+    position: absolute;
+    width: 237px;
+    height: 50px;
+    left: 20px;
+    top: 223px;
+
+    border-style: none;
+    border-radius: 10px;
+
+    background-color: var(--main-white);
+}
+
+.item1-text {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    /* identical to box height */
+
+    color: #FCFDFE;
+}
+
+.icon1 {
+
+    font-size: 24px;
+}
+
+.item2-btn{
+    position: absolute;
+    width: 237px;
+    height: 50px;
+    left: 20px;
+    top: 303px;
+
+    border-style: none;
+    border-radius: 10px;
+}
+
+.icon2{
+    font-size: 24px;
+}
+
+.item2-text {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.item3-btn{
+    position: absolute;
+    width: 237px;
+    height: 50px;
+    left: 20px;
+    top: 383px;
+
+    border-style: none;
+    border-radius: 10px;
+}
+
+.icon3{
+    font-size: 24px;
+}
+
+.item3-text {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    /* identical to box height */
+
+    color: #FCFDFE;
+}
+
+.inactive{
+    background-color: var(--main-white);
+    color: var(--main-blue);
+}
+
+.active{
+    background-color: var(--main-blue);
+    color: white;
+}
+
+.active:hover{
+    opacity: 90%;
+}
+
+.active:active{
+    opacity: 100%;
+}
+
+.inactive:hover{
+    background-color: var(--active-grey);
+}
+
+.inactive:active{
+    background-color: var(--main-white);
+}
+
+.icon-active{
+    color: var(--main-white);
+}
+
+.icon-inactive{
+    color: var(--main-blue);
+}
+
+.text-active{
+    color: var(--main-white);
+}
+
+.text-inactive{
+    color: var(--main-blue);
+}

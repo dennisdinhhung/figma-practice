@@ -1,0 +1,143 @@
+.login-page {
+    position: relative;
+    width: 1272px;
+    height: 647px;
+
+    background: #FFFFFF;
+}
+
+.login-title {
+    position: absolute;
+    left: 12.58%;
+    right: 70.44%;
+    top: 21.17%;
+    bottom: 72.64%;
+
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+
+    color: var(--main-blue);
+}
+
+.input-id {
+    position: absolute;
+    left: 7.7%;
+    right: 65.57%;
+    top: 35.09%;
+    bottom: 57.19%;
+
+    border: 1px solid var(--main-blue);
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    /* placeholder styling */
+    padding-left: 20px;
+
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.input-id::placeholder {
+    color: var(--input-grey);
+}
+
+.input-pw {
+    position: absolute;
+    left: 7.7%;
+    right: 65.57%;
+    top: 50.54%;
+    bottom: 41.73%;
+
+    border: 1px solid var(--main-blue);
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    padding-left: 20px;
+
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.input-pw::placeholder {
+    color: var(--input-grey);
+}
+
+
+.btn-login {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 168px;
+    top: 427px;
+
+    background: var(--main-blue);
+    border-radius: 10px;
+    border-style: none;
+
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+
+    color: #FCFDFE;
+}
+
+.btn-login:hover {
+    opacity: 90%;
+}
+
+.btn-login:active {
+    opacity: 100%;
+}
+
+.eye-con {
+    position: absolute;
+    left: 30.97%;
+    right: 67.14%;
+    top: 52.55%;
+    bottom: 43.74%;
+    font-size: 24px;
+
+    color: var(--main-blue);
+}
+
+.link-home {
+    text-decoration: none;
+}
+
+.link-home:visited {
+    color: #FCFDFE;
+}
+
+.error_msg {
+    position: absolute;
+    left: 98px;
+    top: 392px;
+
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+
+    color: #FF0000;
+}
+
+.pills {
+    position: absolute;
+    width: 643.51px;
+    height: 647px;
+    left: 627.79px;
+    top: 0px;
+}

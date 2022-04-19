@@ -1,0 +1,117 @@
+/*! Table Section*/
+
+.section-table {
+  position: absolute;
+  width: 900px;
+  height: 485px;
+  left: 327px;
+  top: 520px;
+
+  background: #FCFDFE;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  padding: 33px 43px;
+}
+
+.title-table {
+  width: 96px;
+  height: 26px;
+
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+
+  color: var(--main-blue);
+}
+
+.div-search {
+  display: flex;
+}
+
+.the-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.the-table td,
+th {
+  border: 1px solid var(--main-blue);
+}
+
+.btn-del button {
+  width: 120px;
+  height: 40px;
+
+  border: 1px solid var(--main-blue);
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+
+  color: var(--main-blue);
+  background: var(--main-white);
+  border-radius: 5px;
+}
+
+.btn-edit button {
+  width: 120px;
+  height: 40px;
+
+  border: 1px solid var(--main-blue);
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+
+  color: var(--main-blue);
+  background: var(--main-white);
+  border-radius: 5px;
+}
+
+.btn-add button {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+
+  border-style: none;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+
+  color: var(--main-white);
+  background: var(--main-blue);
+  border-radius: 5px;
+}
+
+
+.btn-del button:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+.btn-del button:active {
+  background: var(--main-white);
+}
+
+.btn-edit button:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+.btn-edit button:active {
+  background: var(--main-white);
+}
+
+.btn-add button:hover {
+  opacity: 90%;
+}
+
+.btn-add button:active {
+  opacity: 100%;
+}
