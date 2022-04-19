@@ -1,15 +1,29 @@
 import React, { useState } from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
-
+import { useContext } from 'react'
+import Context from '../context/context'
 
 import {BsSliders, BsClipboardPlus} from 'react-icons/bs'
 import {BiCategory} from 'react-icons/bi'
 import profile_pic from '../static/profile_pic.png'
-import './css/Home.css'
+import '../static/css/Home.css'
+import { resetStateInfo } from '../reducer/action'
 
 function Home() {
     const redirect = useNavigate();
-    const [smth, setSmth] = useState();
+
+    const [state, dispatch] = useContext(Context);
+
+    const {users, user} = state;
+    
+    const handleAdd = () => {
+        if (user.id){
+            dispatch(
+                resetStateInfo(user)
+            )
+        }
+        redirect('/home/2nd')
+    }
 
     return (
         <div className='home-page'>
@@ -35,7 +49,7 @@ function Home() {
                     <div className="item2"> 
                         <button 
                             className='item2-btn inactive'
-                            onClick={() => redirect('/home/2nd')}>
+                            onClick={handleAdd}>
                             <BsClipboardPlus className='icon2 icon-inactive'/>
                             <div className="item2-text text-inactive">
                                 Add User

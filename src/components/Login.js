@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import Group from '../static/Group.svg'
 import {AiOutlineEyeInvisible, AiOutlineEye} from 'react-icons/ai'
-import Validate from './util/Validate'
+import Validate from '../util/Validate'
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from './util/auth';
-import { account } from '../data/account';
-import './css/Login.css'
+import { useAuth } from '../util/auth';
+import { account } from '../static/data/account';
+import '../static/css/Login.css'
 
 function Login() {
     const redirect = useNavigate();

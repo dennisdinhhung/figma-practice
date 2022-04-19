@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
-import { AuthProvider } from './util/auth'
+import { AuthProvider } from '../util/auth'
 
 import AddUser from './add_user/AddUser'
 import About from './about/About'
