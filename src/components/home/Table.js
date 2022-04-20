@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Context from '../../context/context';
-import { editInfo } from '../../reducer/action';
+import { delInfo, editInfo } from '../../reducer/action';
 import '../../static/css/Table.css'
 
 function Table() {
@@ -19,6 +19,12 @@ function Table() {
             editInfo(pickedUser)
         )
         redirect('/home/2nd')
+    }
+
+    const handleDel = () => {
+        dispatch(
+            delInfo(pickedUser)
+        )
     }
 
     return (
@@ -63,7 +69,9 @@ function Table() {
                     </tbody>
                 </table>
 
-                <div className="btn-del">
+                <div 
+                    className="btn-del"
+                    onClick={handleDel}>
                     <button>
                         Delete
                     </button>

@@ -65,6 +65,19 @@ const reducer = (state, action) => {
                 users: [...newUpdateList],
                 user: initialState.user
             }
+        case ACTIONS.DEL_INFO:
+            const indexDel = state.users.indexOf(action.payload);
+
+            const newDelList = [...state.users];
+
+            newDelList.splice(indexDel, 1);
+
+            localStorage.setItem('figma', JSON.stringify(newDelList));
+
+            return{
+                ...state,
+                users: [...newDelList]
+            }
         default:
             return state
     }

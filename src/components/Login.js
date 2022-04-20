@@ -56,9 +56,10 @@ function Login() {
                 })
 
                 //router auth
-                auth.login(login);
+                auth.login(login);  
 
-                redirect('/home')
+                // replace: true is for when the back button is pressed, the browser will not make the user log in again
+                redirect('/home', {replace: true})
             }
         }
 

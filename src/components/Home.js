@@ -8,9 +8,12 @@ import {BiCategory} from 'react-icons/bi'
 import profile_pic from '../static/profile_pic.png'
 import '../static/css/Home.css'
 import { resetStateInfo } from '../reducer/action'
+import { useAuth } from '../util/auth'
 
 function Home() {
+
     const redirect = useNavigate();
+    const auth = useAuth();
 
     const [state, dispatch] = useContext(Context);
 
@@ -25,13 +28,18 @@ function Home() {
         redirect('/home/2nd')
     }
 
+    const handleLogOut = () => {
+        auth.logout();
+        redirect('/')
+    }
+
     return (
         <div className='home-page'>
             <div className="left-menu">
                 <div className="profile">
                     <img src={profile_pic} alt="profile-pic" className='profile-pic'/>
                     <div className='profile_name'>
-                        {'profile_name'}
+                        {auth.authUser.username}
                     </div>
                 </div>
 
@@ -66,6 +74,12 @@ function Home() {
                             </div>
                         </button>
                     </div>
+                </div>
+
+                <div className="logout">
+                    <button onClick={handleLogOut}>
+                        Log Out
+                    </button>
                 </div>
             </div>
 
